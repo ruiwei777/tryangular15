@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "some title", "description": "some content", "comments":[
+    {"id":1, "text": "Nice book"}, {"id":2, "text":"Another comment"}
+  ], "image": "/img/1.jpg"},
+  {"id": 2, "title": "title", "description": "some con1212tent"},
+  {"id": 3, "title": "some", "description": "someffff content"},
+  {"id": 4, "title": "sotle", "description": "someddddddd content"}
+]

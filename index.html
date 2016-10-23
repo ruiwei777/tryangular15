@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="try">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world</title>
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="js/app/app.module.js"></script>
+    <script src="js/app/app.config.js"></script>
+
+    <script src="js/app/blog-list/blog-list.module.js"></script>
+    <script src="js/app/blog-list/blog-list.component.js"></script>
+    <script src="js/app/blog-detail/blog-detail.module.js"></script>
+    <script src="js/app/blog-detail/blog-detail.component.js"></script>
+    <script src="js/app/core/post/post.module.js"></script>
+    <script src="js/app/core/post/post.service.js"></script>
+    <script src="js/app/utils/confirm-click/confirm-click.module.js"></script>
+    <script src="js/app/utils/confirm-click/confirm-click.directive.js"></script>
+    <script src="js/app/utils/try-nav/try-nav.module.js"></script>
+    <script src="js/app/utils/try-nav/try-nav.directive.js"></script>
+
+    <base href="/">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!--<blog-list></blog-list>-->
+
+<div ng-view>
+
+</div>
+
+</body>
+</html>

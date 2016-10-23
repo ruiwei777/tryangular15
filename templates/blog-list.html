@@ -1,0 +1,17 @@
+<div class=''><h1>{{ title }}</h1>
+    <button ng-click='someClickTest()'>Click me!</button>
+
+    <ul>
+        <li ng-repeat="item in items | orderBy: orderInput">
+            <a href="#" ng-click="goToItem(item)" >{{item.id}}: {{ item.title }}</a>
+            <!--<a ng-href="/blog/{{ item.id }}">{{ item.title }}</a>-->
+            <!--<confirm-click message="Are you positive?" post="item"></confirm-click>-->
+        </li>
+        <select ng-model="orderInput">
+            <option value="id">id</option>
+            <option value="-id">-id</option>
+            <option value="title">title</option>
+            <option value="-title">-title</option>
+        </select>
+    </ul>
+</div>

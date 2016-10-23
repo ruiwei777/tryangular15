@@ -1,0 +1,24 @@
+<h1>Blog {{ post.id }}: {{ post.title }}</h1>
+<hr>
+<img ng-src="{{post.image}}" alt="">
+<p>
+    {{ post.description }}
+</p>
+
+<h3>Comments</h3>
+<ul>
+    <li>
+        <input type="text" ng-model="query" placeholder="filter comments">
+    </li>
+    <li ng-repeat="comment in post.comments | filter: query">
+        <p>{{comment.id}}: {{comment.text}}&nbsp;<a href="#" confirm-click="Are you sure?"
+                                                    confirmed-click="deleteComment(comment)">Delete</a></p>
+
+
+    </li>
+</ul>
+<p style="color: dodgerblue">{{reply.text}}</p>
+<form ng-submit="addReply()">
+    <textarea ng-model="reply.text"></textarea>
+    <input type="submit" value="Submit">
+</form>
